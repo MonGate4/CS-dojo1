@@ -81,6 +81,13 @@ export const CalculatorPage: React.FC<Props> = (props: Props) => {
             <Button variant="contained" onClick={sendData(result)}>
               {result} Kcal
             </Button>
+            <Button
+              variant="outlined"
+              onClick={() => setValues({})}
+              style={{ marginLeft: 16 }}
+            >
+              Reset
+            </Button>
           </div>
         </div>
         <div className={classes.lateralBar}>
